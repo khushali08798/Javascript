@@ -272,6 +272,7 @@ body {
 /* About Section */
 .about-section {
     padding: 120px 0 80px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
 }
 
 .about-section h1 {
@@ -283,14 +284,16 @@ body {
 
 .about-content {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 50px;
-    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .about-text {
-    flex: 1;
-    min-width: 300px;
+    text-align: center;
+    max-width: 600px;
 }
 
 .about-text h2 {
@@ -302,6 +305,8 @@ body {
 .about-text ul {
     margin-bottom: 30px;
     padding-left: 20px;
+    text-align: left;
+    display: inline-block;
 }
 
 .about-text li {
@@ -309,9 +314,14 @@ body {
 }
 
 .about-image {
-    flex: 1;
+    order: -1;
     text-align: center;
-    min-width: 300px;
+}
+
+.about-image .profile-img {
+    border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border: 5px solid #fff;
 }
 
 /* Experience Section */
